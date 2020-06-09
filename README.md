@@ -1,8 +1,6 @@
 # Thinkpad T460s macOS Catalina (OpenCore bootloader)
 
-> First ever OpenCore build for T460s
-
-<img src="/Images/T460s.png" alt="Thinkpad T460s" height="500">
+> OpenCore for ThinkPad T460s with DW1820A Cards
 
 ## Introduction
 
@@ -20,17 +18,19 @@
 
 * @MSzturc for keyboard map and [ThinkpadAssistant](https://github.com/MSzturc/ThinkpadAssistant)
 
+* [@simprecicchiani](https://github.com/simprecicchiani) for his original [work](https://github.com/simprecicchiani/Thinkpad-T460s-macOS-OpenCore) on making OpenCore work on the T460s.
+
 
 ### My Hardware
 
 * Model: Thinkpad T460s (20F9003AUS)
-* Processor: Intel Core i7-6600U (2C, 2.6 / 3.4GHz, 4MB)vPro
+* Processor: Intel Core i7-6600U (2C, 2.6 / 3.4GHz, 4MB) vPro
 * Graphics: Integrated Intel HD Graphics 520
-* Memory: 4GB Soldered + 4GB DIMM
-* Display: 14" WQHD (2560x1440) IPS
+* Memory: 4GB Soldered + 8GB DIMM
+* Display: 14" FHD (1920x1080) IPS
 * Sound Card: Realtek ALC293
-* Storage: 256GB SSD M.2 Opal2
-* WLAN + Bluetooth: BCM94360CS2
+* Storage: TOSHIBA THNSF5256GPU7 256GB NVMe Drive
+* WLAN + Bluetooth: Dell DW1820A
 * Camera: 720p
 * Keyboard: Backlit
 * Fingerprint Reader: Yes
@@ -157,7 +157,7 @@ killall Dock
 
 - [x] Internal camera `working fine on FaceTime, Skype, Webex and others`
 
-- [x] Sleep / Wake / Shutdown / Reboot `with lid sernsor`
+- [x] Sleep / Wake / Shutdown / Reboot `with lid sensor`
 
 - [x] Intel Gigabit Ethernet
 
@@ -188,7 +188,9 @@ killall Dock
 
 - [ ] Video output not so stable
 
-- [ ] WWAN `Legacy_Sierra_QMI.kext needed, not tested but should work`
+## What needs testing
+
+- [ ] WWAN `Legacy_Sierra_QMI.kext included, but not tested yet`
 
 ## Update tracker 🔄
 
@@ -208,10 +210,6 @@ killall Dock
 | IntelMausi | 1.0.3 |
 | Sinetek-rtsx.kext | 2.2 |
 
-
-## If you found my work useful please consider a PayPal donation
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y5BE5HYACDERG&source=url" target="_blank"><img src="/Images/buymeacoffee.png" alt="Buy Me A Coffee" width="300" ></a>
 
 ## Thanks to
 
